@@ -217,6 +217,8 @@ function PopulateAvailableFavor(player: table, iconList: table)
 				uiIcon.StopAskingButton:SetHide(true);
 				uiIcon.Icon:SetColor(1,1,1);
 
+				PopulateAvailableBasicSteps(player, iconList, "Favor");
+
 				iAvailableItemCount = iAvailableItemCount + 1;
 			end
 		end
@@ -249,6 +251,13 @@ function OnClickAvailableOneTimeFavor(player, iAddAmount: number)
 					iAddAmount = clip(iAddAmount, nil, pDealItem:GetMaxAmount());
 					if (iAddAmount ~= pDealItem:GetAmount()) then
 						pDealItem:SetAmount(iAddAmount);
+
+						-- !!! need this for our custom step buttons, else the game allows us to go into negative amounts
+						if pDealItem ~= nil and pDealItem:GetAmount() < 1 then
+							local itemID = pDealItem:GetID();
+							pDeal:RemoveItemByID(itemID);
+						end
+
 						bFound = true;
 						break;
 					else
@@ -281,6 +290,11 @@ function OnClickAvailableOneTimeFavor(player, iAddAmount: number)
 			end
 		end
 
+		-- !!! need this for our custom step buttons, else the game allows us to go into negative amounts
+		if pDealItem ~= nil and pDealItem:GetAmount() < 1 then
+			local itemID = pDealItem:GetID();
+			pDeal:RemoveItemByID(itemID);
+		end
 
 		if (bFound) then
 			UpdateProposedWorkingDeal();
