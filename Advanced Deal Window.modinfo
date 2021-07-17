@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="fbb7b86a-9ac9-4a8e-9439-9ded6aceda0e" version="11">
+<Mod id="fbb7b86a-9ac9-4a8e-9439-9ded6aceda0e" version="12">
   <Properties>
     <Name>Better Deal Window</Name>
-    <Description>Improved deal window.  Shows luxuries obtained via other trades and city states.  Larger scroll areas.</Description>
+    <Description>Improved deal window.  Shows luxuries obtained via other trades and city states; history panel; larger scroll areas.</Description>
     <CustomProperties xmlns="http://schemas.microsoft.com/developer/msbuild/2003"></CustomProperties>
-    <Created>1612096768</Created>
+    <Created>1626531543</Created>
     <Teaser>Shows luxuries imported from other players, and deal history.</Teaser>
     <Authors>~Venom~</Authors>
     <SpecialThanks>DB, Aristos, mironos/slicelonger, GrantSP</SpecialThanks>
