@@ -20,6 +20,7 @@ g_OtherPlayer =	nil;
 g_AvailableGroups = {};
 g_IconOnlyIM = InstanceManager:new( "IconOnly",  "SelectButton", Controls.IconOnlyContainer );
 g_IconAndTextIM	= InstanceManager:new( "IconAndText",  "SelectButton", Controls.IconAndTextContainer );
+g_SmallIconAndTextIM	= InstanceManager:new( "SmallIconAndText",  "SelectButton", Controls.IconOnlyContainer );
 g_ValueEditDealItemID = -1;		-- The ID of the deal item that is being value edited.
 g_ValueEditDealItemControlTable = nil; -- The control table of the deal item that is being edited.
 
@@ -35,6 +36,7 @@ g_uiTheirOffers = {};
 -- ===========================================================================
 local ms_PlayerPanelIM		:table		= InstanceManager:new( "PlayerAvailablePanel",  "Root" );
 local ms_LeftRightListIM	:table		= InstanceManager:new( "LeftRightList",  "List", Controls.LeftRightListContainer );
+local ms_SmallLeftRightListIM	:table		= InstanceManager:new( "SmallLeftRightList",  "List", Controls.SmallLeftRightListContainer );
 local ms_TopDownListIM		:table		= InstanceManager:new( "TopDownList",  "List", Controls.TopDownListContainer );
 local ms_AgreementOptionIM	:table		= InstanceManager:new( "AgreementOptionInstance",  "AgreementOptionButton", Controls.ValueEditStack );
 local ms_CityDetailsIM		:table		= InstanceManager:new( "CityIconAndDetails", "CityDetailsContainer", Controls.IconAndTextContainer );
@@ -903,6 +905,13 @@ function OnClickAvailableOneTimeGold(player, iAddAmount : number)
 					iAddAmount = clip(iAddAmount, nil, pDealItem:GetMaxAmount());
 					if (iAddAmount ~= pDealItem:GetAmount()) then
 						pDealItem:SetAmount(iAddAmount);
+
+						-- !!! need this for our custom step buttons, else the game allows us to go into negative amounts
+						if pDealItem ~= nil and pDealItem:GetAmount() < 1 then
+							local itemID = pDealItem:GetID();
+							pDeal:RemoveItemByID(itemID);
+						end
+
 						bFound = true;
 						break;
 					else
@@ -935,6 +944,11 @@ function OnClickAvailableOneTimeGold(player, iAddAmount : number)
 			end
 		end
 
+		-- !!! need this for our custom step buttons, else the game allows us to go into negative amounts
+		if pDealItem ~= nil and pDealItem:GetAmount() < 1 then
+			local itemID = pDealItem:GetID();
+			pDeal:RemoveItemByID(itemID);
+		end
 
 		if (bFound) then
 			UpdateProposedWorkingDeal();
@@ -1302,6 +1316,8 @@ function PopulateAvailableGold(player : table, iconList : table)
 					uiIcon.Icon:SetColor(1,1,1);
 					uiIcon.AmountText:SetColor(.8, .8, .8);
 
+					PopulateAvailableBasicSteps(player, iconList, "Gold");
+
 					availableItemCount = availableItemCount + 1;
 				end
 			else
@@ -1325,6 +1341,87 @@ function PopulateAvailableGold(player : table, iconList : table)
 	end
 
 	return availableItemCount;
+end
+
+function PopulateAvailableBasicSteps(player : table, iconList : table, type)
+
+	local iconListInner = ms_SmallLeftRightListIM:GetInstance(iconList.ListStack);
+	iconListInner.List:CalculateSize();
+
+	-- logically we should be fine using OnClickAvailableOneTimeFavor despite it being reliant upon XP2, as it's wrapped in our if, probably...
+	if type == "Favor" then
+
+		local uiIcon = g_SmallIconAndTextIM:GetInstance(iconListInner.ListStack);
+		uiIcon.IconText:SetText("5")
+		uiIcon.SelectButton:RegisterCallback( Mouse.eLClick, function() OnClickAvailableOneTimeFavor(player, 5); end );
+		uiIcon.SelectButton:RegisterCallback( Mouse.eRClick, function() OnClickAvailableOneTimeFavor(player, -5); end );
+		HandleBasicStepDefaults(uiIcon);
+
+		uiIcon = g_SmallIconAndTextIM:GetInstance(iconListInner.ListStack);
+		uiIcon.IconText:SetText("10")
+		uiIcon.SelectButton:RegisterCallback( Mouse.eLClick, function() OnClickAvailableOneTimeFavor(player, 10); end );
+		uiIcon.SelectButton:RegisterCallback( Mouse.eRClick, function() OnClickAvailableOneTimeFavor(player, -10); end );
+		HandleBasicStepDefaults(uiIcon);
+
+		uiIcon = g_SmallIconAndTextIM:GetInstance(iconListInner.ListStack);
+		uiIcon.IconText:SetText("25")
+		uiIcon.SelectButton:RegisterCallback( Mouse.eLClick, function() OnClickAvailableOneTimeFavor(player, 25); end );
+		uiIcon.SelectButton:RegisterCallback( Mouse.eRClick, function() OnClickAvailableOneTimeFavor(player, -25); end );
+		HandleBasicStepDefaults(uiIcon);
+
+		uiIcon = g_SmallIconAndTextIM:GetInstance(iconListInner.ListStack);
+		uiIcon.IconText:SetText("100")
+		uiIcon.SelectButton:RegisterCallback( Mouse.eLClick, function() OnClickAvailableOneTimeFavor(player, 100); end );
+		uiIcon.SelectButton:RegisterCallback( Mouse.eRClick, function() OnClickAvailableOneTimeFavor(player, -100); end );
+		HandleBasicStepDefaults(uiIcon);
+
+	end
+	
+	if type == "Gold" then
+
+		local uiIcon = g_SmallIconAndTextIM:GetInstance(iconListInner.ListStack);
+		uiIcon.IconText:SetText("1")
+		uiIcon.SelectButton:RegisterCallback( Mouse.eLClick, function() OnClickAvailableOneTimeGold(player, 1); end );
+		uiIcon.SelectButton:RegisterCallback( Mouse.eRClick, function() OnClickAvailableOneTimeGold(player, -1); end );
+		HandleBasicStepDefaults(uiIcon);
+
+		uiIcon = g_SmallIconAndTextIM:GetInstance(iconListInner.ListStack);
+		uiIcon.IconText:SetText("500")
+		uiIcon.SelectButton:RegisterCallback( Mouse.eLClick, function() OnClickAvailableOneTimeGold(player, 500); end );
+		uiIcon.SelectButton:RegisterCallback( Mouse.eRClick, function() OnClickAvailableOneTimeGold(player, -500); end );
+		HandleBasicStepDefaults(uiIcon);
+
+		uiIcon = g_SmallIconAndTextIM:GetInstance(iconListInner.ListStack);
+		uiIcon.IconText:SetText("10")
+		uiIcon.SelectButton:RegisterCallback( Mouse.eLClick, function() OnClickAvailableOneTimeGold(player, 10); end );
+		uiIcon.SelectButton:RegisterCallback( Mouse.eRClick, function() OnClickAvailableOneTimeGold(player, -10); end );
+		HandleBasicStepDefaults(uiIcon);
+
+		uiIcon = g_SmallIconAndTextIM:GetInstance(iconListInner.ListStack);
+		uiIcon.IconText:SetText("1K")
+		uiIcon.SelectButton:RegisterCallback( Mouse.eLClick, function() OnClickAvailableOneTimeGold(player, 1000); end );
+		uiIcon.SelectButton:RegisterCallback( Mouse.eRClick, function() OnClickAvailableOneTimeGold(player, -1000); end );
+		HandleBasicStepDefaults(uiIcon);
+
+	end
+
+	-- we don't want a default else to ensure mod compatibility (any other modded basic resources would simply act as gold on click handlers)
+
+	iconListInner.ListStack:SetOffsetY(4);
+	iconListInner.ListStack:SetOffsetX(5);
+	iconList.ListStack:CalculateSize();
+
+end
+
+function HandleBasicStepDefaults(uiIcon)
+
+	uiIcon.SelectButton:SetToolTipString("Increase trade by " .. uiIcon.IconText:GetText() .. ", right click to decrease.");
+	uiIcon.ValueText:SetHide(true);
+	uiIcon.RemoveButton:SetHide(true);
+	uiIcon.StopAskingButton:SetHide(true);
+	uiIcon.Icon:SetColor(1,1,1);
+	uiIcon.AmountText:SetColor(.8, .8, .8);
+
 end
 
 -- ===========================================================================
@@ -3523,6 +3620,7 @@ function OnShow()
 
 	g_IconOnlyIM:ResetInstances();
 	g_IconAndTextIM:ResetInstances();
+	g_SmallIconAndTextIM:ResetInstances();
 	ms_MinimizedSectionIM:ResetInstances();
 
 	--Reset the cityDetails states to closed

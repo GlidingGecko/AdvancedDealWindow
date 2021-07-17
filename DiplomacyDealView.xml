@@ -8,6 +8,7 @@
 	<Container ID="IconOnlyContainer" Hidden="1"/>
 	<Container ID="IconAndTextContainer" Hidden="1"/>
 	<Container ID="LeftRightListContainer" Hidden="1"/>
+	<Container ID="SmallLeftRightListContainer" Hidden="1"/>
 	<Container ID="TopDownListContainer" Hidden="1"/>
 	<Container ID="HistoryListContainer" Hidden="1"/>
 
@@ -46,6 +47,26 @@
 		</GridButton>
 	</Instance>
 
+	<Instance	Name="SmallIconAndText">
+		<GridButton ID="SelectButton" Size="25,25" Padding="0,0" InnerPadding="0,0" OuterPadding="0,0" MinSize="0,0" Offset="0,0" Anchor="L,T">
+			<Stack Size="parent,0" StackGrowth="Right">
+				<Container Size="0,0">
+					<Image ID="Icon" StretchMode="None" Size="16,16" Anchor="C,C"/>
+					<Label ID="AmountText" Anchor="R,C" Style="FontNormalBold12" FontStyle="Stroke"/>
+				</Container>
+				<Container Size="parent, parent">
+					<Stack StackGrowth="Bottom" Anchor="L,C">
+						<Label ID="IconText" Size="parent, 0" Style="FontNormalBold12" FontStyle="Stroke"/>
+						<ScrollTextField ID="ValueText" Size="parent, 0" Style="FontNormalBold12" FontStyle="Stroke"/>
+					</Stack>
+				</Container>
+			</Stack>
+			<Image ID="UnacceptableIcon" Anchor="R,T" Offset="-8,-8" Texture="Alert18" Size="18,18" ToolTip="LOC_DIPLO_DEAL_UNACCEPTABLE_ITEM_TOOLTIP" Hidden="1"/>
+			<Button ID="RemoveButton" Anchor="R,B" Offset ="-4,-4" Texture="Controls_RemoveDeal" Size="22,22" ToolTip="LOC_DIPLO_DEAL_REMOVE_ITEM" Hidden="1"/>
+			<Button ID="StopAskingButton" Anchor="R,T" Offset ="-4,-4" Texture="Controls_DontAskAgainSmall" Size="16,16" ToolTip="LOC_DIPLO_DEAL_MARK_UNACCEPTABLE" Hidden="1"/>
+		</GridButton>
+	</Instance>	
+	
   <Instance	Name="CityIconAndDetails">
     <Container ID ="CityDetailsContainer" Size="auto,auto" MinSize="210, 60" Anchor="C,T">
       <Grid ID="CityDetails" Style ="ButtonDraggableGrid" Size ="210, auto" Anchor="C,T" Padding ="0,6" InnerPadding ="0,0" OuterPadding="0,10" Hidden="1">
@@ -96,6 +117,13 @@
 				<Label ID="TitleText" Anchor="C,C" Offset="0,0" Style="HeaderSmallCaps" Hidden="false" Color0="140,140,140"/>		
 			</Grid>
 			<Stack ID="ListStack" StackGrowth="Right" Anchor="L,T" WrapWidth="parent">
+			</Stack>
+		</Stack>
+	</Instance>
+
+	<Instance	Name="SmallLeftRightList">
+		<Stack ID="List" Size="60,60">
+			<Stack ID="ListStack" StackGrowth="Right" Anchor="L,T" WrapWidth="60">
 			</Stack>
 		</Stack>
 	</Instance>
