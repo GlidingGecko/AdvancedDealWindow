@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BDW_Text_RU -->
+<!-- Author: Shane -->
+<!-- DateCreated: 4/19/2020 5:15:40 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_BDW_IMPORTED" language="ru_RU">
+			<Text>Импортировано из другого источника.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_MY_INVENTORY" language="ru_RU">
+			<Text>МОЙ ИНВЕНТАРЬ:</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_THEIR_INVENTORY" language="ru_RU">
+			<Text>ИХ ИНВЕНТАРЬ:</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_REMAINING" language="ru_RU">
+			<Text>ОСТАЛОСЬ</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_ENDED" language="ru_RU">
+			<Text>ЗАКАНЧИВАЮЩИЙСЯ</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SESSIONWARNING" language="ru_RU">
+			<Text>Эта сделка относится к вашей последней игровой сессии. Только многооборотные предметы показаны.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HISTORY_PLACEHOLDER" language="ru_RU">
+			<Text>Ваши предыдущие сделки с этой цивилизацией покажут здесь. Будут отображены только предложения из этой игровой сессии.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PREVIOUS_DEAL" language="ru_RU">
+			<Text>Предыдущая сделка</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_TURNS_AGO" language="ru_RU">
+			<Text>Поворачивает назад</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HIDE" language="ru_RU">
+			<Text>Скрыть историю</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SHOW" language="ru_RU">
+			<Text>Показать историю</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PLAYER_HAS_RESOURCE" language="ru_RU">
+			<Text>У вас уже есть доступ к этому ресурсу.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_OTHER_HAS_RESOURCE" language="ru_RU">
+			<Text>уже имеет доступ к этому ресурсу.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

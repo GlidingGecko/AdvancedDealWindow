@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BDW_Text -->
+<!-- Author: Shane -->
+<!-- DateCreated: 4/19/2020 5:06:09 PM -->
+<GameData>
+	<BaseGameText>
+		<Row Tag="LOC_BDW_IMPORTED">
+			<Text>Imported from another source.</Text>
+		</Row>
+		<Row Tag="LOC_BDW_MY_INVENTORY">
+			<Text>MY INVENTORY:</Text>
+		</Row>
+		<Row Tag="LOC_BDW_THEIR_INVENTORY">
+			<Text>THEIR INVENTORY:</Text>
+		</Row>
+		<Row Tag="LOC_BDW_REMAINING">
+			<Text>LEFT</Text>
+		</Row>
+		<Row Tag="LOC_BDW_ENDED">
+			<Text>ENDED</Text>
+		</Row>
+		<Row Tag="LOC_BDW_SESSIONWARNING">
+			<Text>This deal is from your last gameplay session. Only multi-turn items are shown.</Text>
+		</Row>
+		<Row Tag="LOC_BDW_HISTORY_PLACEHOLDER">
+			<Text>Your previous deals with this civilization will show here. Only deals from this gameplay session will be displayed.</Text>
+		</Row>
+		<Row Tag="LOC_BDW_PREVIOUS_DEAL">
+			<Text>Previous Deal</Text>
+		</Row>
+		<Row Tag="LOC_BDW_TURNS_AGO">
+			<Text>Turns Ago</Text>
+		</Row>
+		<Row Tag="LOC_BDW_HIDE">
+			<Text>Hide History</Text>
+		</Row>
+		<Row Tag="LOC_BDW_SHOW">
+			<Text>Show History</Text>
+		</Row>
+		<Row Tag="LOC_BDW_PLAYER_HAS_RESOURCE">
+			<Text>You already have access to this resource.</Text>
+		</Row>
+		<Row Tag="LOC_BDW_OTHER_HAS_RESOURCE">
+			<Text>already has access to this resource.</Text>
+		</Row>
+	</BaseGameText>
+</GameData>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BDW_Text_ja -->
+<!-- Author: Shane -->
+<!-- DateCreated: 4/19/2020 5:12:41 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_BDW_IMPORTED" language="ja_JP">
+			<Text>別のソースからインポートされました。</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_MY_INVENTORY" language="ja_JP">
+			<Text>私の在庫：</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_THEIR_INVENTORY" language="ja_JP">
+			<Text>彼らの在庫：</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_REMAINING" language="ja_JP">
+			<Text>残り</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_ENDED" language="ja_JP">
+			<Text>終了しました</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SESSIONWARNING" language="ja_JP">
+			<Text>この取引は、最後のゲームプレイセッションからのものです。 マルチターンのアイテムのみが表示されます。</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HISTORY_PLACEHOLDER" language="ja_JP">
+			<Text>この文明との以前の取引がここに表示されます。 このゲームプレイセッションの取引のみが表示されます。</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PREVIOUS_DEAL" language="ja_JP">
+			<Text>以前の取引</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_TURNS_AGO" language="ja_JP">
+			<Text>前に回ります</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HIDE" language="ja_JP">
+			<Text>歴史を隠す</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SHOW" language="ja_JP">
+			<Text>履歴を表示</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PLAYER_HAS_RESOURCE" language="ja_JP">
+			<Text>このリソースにはすでにアクセスできます。</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_OTHER_HAS_RESOURCE" language="ja_JP">
+			<Text>すでにこのリソースにアクセスできます。</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

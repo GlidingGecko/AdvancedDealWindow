@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BDW_Text_PL -->
+<!-- Author: Shane -->
+<!-- DateCreated: 4/19/2020 5:14:15 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_BDW_IMPORTED" language="pl_PL">
+			<Text>Importowane z innego źródła.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_MY_INVENTORY" language="pl_PL">
+			<Text>MOJA INWENTARYZACJA:</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_THEIR_INVENTORY" language="pl_PL">
+			<Text>ICH INWENTARYZACJA:</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_REMAINING" language="pl_PL">
+			<Text>POZOSTAŁY</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_ENDED" language="pl_PL">
+			<Text>ZAKOŃCZONY</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SESSIONWARNING" language="pl_PL">
+			<Text>Ta oferta pochodzi z ostatniej sesji gry. Pokazane są tylko przedmioty wieloobrotowe.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HISTORY_PLACEHOLDER" language="pl_PL">
+			<Text>Tutaj pokażą się twoje poprzednie interesy z tą cywilizacją. Wyświetlane będą tylko oferty z tej sesji gry.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PREVIOUS_DEAL" language="pl_PL">
+			<Text>Poprzednia oferta</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_TURNS_AGO" language="pl_PL">
+			<Text>Odwraca się</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HIDE" language="pl_PL">
+			<Text>Ukryj historię</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SHOW" language="pl_PL">
+			<Text>Pokaż historię</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PLAYER_HAS_RESOURCE" language="pl_PL">
+			<Text>Masz już dostęp do tego zasobu.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_OTHER_HAS_RESOURCE" language="pl_PL">
+			<Text>ma już dostęp do tego zasobu.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

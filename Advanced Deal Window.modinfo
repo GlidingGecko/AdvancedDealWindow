@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="fbb7b86a-9ac9-4a8e-9439-9ded6aceda0e" version="11">
+  <Properties>
+    <Name>Better Deal Window</Name>
+    <Description>Improved deal window.  Shows luxuries obtained via other trades and city states.  Larger scroll areas.</Description>
+    <CustomProperties xmlns="http://schemas.microsoft.com/developer/msbuild/2003"></CustomProperties>
+    <Created>1612096768</Created>
+    <Teaser>Shows luxuries imported from other players, and deal history.</Teaser>
+    <Authors>~Venom~</Authors>
+    <SpecialThanks>DB, Aristos, mironos/slicelonger, GrantSP</SpecialThanks>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <References>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </References>
+    <ActionCriteria>
+        <Criteria id="Expansion1">
+            <GameCoreInUse>Expansion1</GameCoreInUse>
+        </Criteria>
+        <Criteria id="Expansion2">
+            <GameCoreInUse>Expansion2</GameCoreInUse>
+        </Criteria>
+        <Criteria id="Monopolies_Mode">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>GAMEMODE_MONOPOLIES</ConfigurationId>
+                <Value>1</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+		<Criteria id="Monopolies_Mode_Expansion2">
+			<RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse>
+			<ConfigurationValueMatches>
+				<Group>Game</Group>
+				<ConfigurationId>GAMEMODE_MONOPOLIES</ConfigurationId>
+				<Value>1</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+    </ActionCriteria>
+  <InGameActions>
+    <ImportFiles id="ADW_Initial">
+      <Properties>
+        <LoadOrder>50000</LoadOrder>
+      </Properties>
+      <File>DiplomacyDealView.lua</File>
+      <File>DiplomacyDealView.xml</File>
+      <File>DiplomacyDealView_Expansion2.lua</File>
+    </ImportFiles>
+    <ImportFiles id="ADW_KublaiKhanVietnam_Files_MODE" criteria="Monopolies_Mode">
+      <Properties>
+        <LoadOrder>50000</LoadOrder>
+      </Properties>
+      <File>DiplomacyDealView.lua</File>
+      <File>DiplomacyDealView.xml</File>
+      <File>DiplomacyDealView_Expansion2.lua</File>
+        <File>DiplomacyDealView_KublaiKhanVietnam_MODE.lua</File>
+        <File>DiplomacyDealView_KublaiKhanVietnam_MODE_Expansion2.lua</File>
+    </ImportFiles>
+    <UpdateText id="ADW_UpdateText">
+      <File>Text/BDW_Text.xml</File>
+      <File>Text/BDW_Text_CN.xml</File>
+      <File>Text/BDW_Text_DE.xml</File>
+      <File>Text/BDW_Text_ES.xml</File>
+      <File>Text/BDW_Text_FR.xml</File>
+      <File>Text/BDW_Text_IT.xml</File>
+      <File>Text/BDW_Text_JP.xml</File>
+      <File>Text/BDW_Text_KR.xml</File>
+      <File>Text/BDW_Text_PL.xml</File>
+      <File>Text/BDW_Text_PT.xml</File>
+      <File>Text/BDW_Text_RU.xml</File>
+    </UpdateText>
+    <ReplaceUIScript id="ADW_Replace_Base">
+      <Properties>
+        <LuaContext>DiplomacyDealView</LuaContext>
+        <LuaReplace>DiplomacyDealView.lua</LuaReplace>
+        <LoadOrder>50000</LoadOrder>
+      </Properties>
+    </ReplaceUIScript>
+    <ReplaceUIScript id="ADW_Replace_XP2" criteria="Expansion2">
+      <Properties>
+        <LuaContext>DiplomacyDealView</LuaContext>
+        <LuaReplace>DiplomacyDealView_Expansion2.lua</LuaReplace>
+        <LoadOrder>50001</LoadOrder>
+      </Properties>
+    </ReplaceUIScript>
+    <ReplaceUIScript id="ADW_Replace_Monopoly" criteria="Monopolies_Mode">
+      <Properties>
+        <LuaContext>DiplomacyDealView</LuaContext>
+        <LuaReplace>DiplomacyDealView_KublaiKhanVietnam_MODE.lua</LuaReplace>
+        <LoadOrder>50002</LoadOrder>
+      </Properties>
+    </ReplaceUIScript>
+    <ReplaceUIScript id="ADW_Replace_Monopoly_XP2" criteria="Monopolies_Mode_Expansion2">
+      <Properties>
+        <LuaContext>DiplomacyDealView</LuaContext>
+        <LuaReplace>DiplomacyDealView_KublaiKhanVietnam_MODE_Expansion2.lua</LuaReplace>
+        <LoadOrder>50003</LoadOrder>
+      </Properties>
+    </ReplaceUIScript>
+  </InGameActions>
+  <Files>
+    <File>DiplomacyDealView.lua</File>
+    <File>DiplomacyDealView.xml</File>
+    <File>DiplomacyDealView_Expansion2.lua</File>
+    <File>DiplomacyDealView_KublaiKhanVietnam_MODE.lua</File>
+    <File>DiplomacyDealView_KublaiKhanVietnam_MODE_Expansion2.lua</File>
+    <File>Text/BDW_Text.xml</File>
+    <File>Text/BDW_Text_CN.xml</File>
+    <File>Text/BDW_Text_DE.xml</File>
+    <File>Text/BDW_Text_ES.xml</File>
+    <File>Text/BDW_Text_FR.xml</File>
+    <File>Text/BDW_Text_IT.xml</File>
+    <File>Text/BDW_Text_JP.xml</File>
+    <File>Text/BDW_Text_KR.xml</File>
+    <File>Text/BDW_Text_PL.xml</File>
+    <File>Text/BDW_Text_PT.xml</File>
+    <File>Text/BDW_Text_RU.xml</File>
+  </Files>
+</Mod>

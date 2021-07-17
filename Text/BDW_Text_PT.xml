@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BDW_Text_PT -->
+<!-- Author: Shane -->
+<!-- DateCreated: 4/19/2020 5:15:01 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_BDW_IMPORTED" language="pt_BR">
+			<Text>Importado de outra fonte.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_MY_INVENTORY" language="pt_BR">
+			<Text>MEU INVENTÁRIO:</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_THEIR_INVENTORY" language="pt_BR">
+			<Text>SEU INVENTÁRIO:</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_REMAINING" language="pt_BR">
+			<Text>REMANESCENTE</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_ENDED" language="pt_BR">
+			<Text>TERMINADO</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SESSIONWARNING" language="pt_BR">
+			<Text>Este acordo é da sua última sessão de jogo. Apenas itens com várias voltas são mostrados.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HISTORY_PLACEHOLDER" language="pt_BR">
+			<Text>Seus acordos anteriores com esta civilização serão mostrados aqui. Apenas ofertas desta sessão de jogo serão exibidas.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PREVIOUS_DEAL" language="pt_BR">
+			<Text>Oferta anterior</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_TURNS_AGO" language="pt_BR">
+			<Text>Turns Ago</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HIDE" language="pt_BR">
+			<Text>Ocultar histórico</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SHOW" language="pt_BR">
+			<Text>Mostrar histórico</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PLAYER_HAS_RESOURCE" language="pt_BR">
+			<Text>Você já tem acesso a este recurso.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_OTHER_HAS_RESOURCE" language="pt_BR">
+			<Text>já tem acesso a este recurso.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

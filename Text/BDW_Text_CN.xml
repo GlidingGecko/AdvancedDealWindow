@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BDW_Text_ZH -->
+<!-- Author: Shane -->
+<!-- DateCreated: 4/19/2020 5:16:20 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_BDW_IMPORTED" language="zh_Hans_CN">
+			<Text>从其他来源导入。</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_MY_INVENTORY" language="zh_Hans_CN">
+			<Text>我的库存：</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_THEIR_INVENTORY" language="zh_Hans_CN">
+			<Text>他们的库存：</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_REMAINING" language="zh_Hans_CN">
+			<Text>剩余的</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_ENDED" language="zh_Hans_CN">
+			<Text>已结束</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SESSIONWARNING" language="zh_Hans_CN">
+			<Text>这笔交易来自您上一次的游戏会话。 仅显示多回合项目。</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HISTORY_PLACEHOLDER" language="zh_Hans_CN">
+			<Text>您以前对这种文明的处理将在这里显示。 仅显示此游戏过程中的交易。</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PREVIOUS_DEAL" language="zh_Hans_CN">
+			<Text>先前交易</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_TURNS_AGO" language="zh_Hans_CN">
+			<Text>转身</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HIDE" language="zh_Hans_CN">
+			<Text>隐藏历史</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SHOW" language="zh_Hans_CN">
+			<Text>显示历史</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PLAYER_HAS_RESOURCE" language="zh_Hans_CN">
+			<Text>您已经可以访问该资源。</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_OTHER_HAS_RESOURCE" language="zh_Hans_CN">
+			<Text>已经可以访问此资源。</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

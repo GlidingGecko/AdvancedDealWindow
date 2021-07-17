@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BDW_Text_KO -->
+<!-- Author: Shane -->
+<!-- DateCreated: 4/19/2020 5:13:33 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_BDW_IMPORTED" language="ko_KR">
+			<Text>다른 소스에서 가져 왔습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_MY_INVENTORY" language="ko_KR">
+			<Text>내 재고 :</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_THEIR_INVENTORY" language="ko_KR">
+			<Text>그들의 재고 :</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_REMAINING" language="ko_KR">
+			<Text>남은</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_ENDED" language="ko_KR">
+			<Text>종료</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SESSIONWARNING" language="ko_KR">
+			<Text>이 거래는 마지막 게임 플레이 세션에서 이루어집니다. 멀티 턴 아이템 만 표시됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HISTORY_PLACEHOLDER" language="ko_KR">
+			<Text>이 문명에 대한 이전 거래가 여기에 표시됩니다. 이 게임 플레이 세션의 거래 만 표시됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PREVIOUS_DEAL" language="ko_KR">
+			<Text>이전 거래</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_TURNS_AGO" language="ko_KR">
+			<Text>전진</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HIDE" language="ko_KR">
+			<Text>역사 숨기기</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SHOW" language="ko_KR">
+			<Text>히스토리 표시</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PLAYER_HAS_RESOURCE" language="ko_KR">
+			<Text>이미이 리소스에 액세스 할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_OTHER_HAS_RESOURCE" language="ko_KR">
+			<Text>이미이 리소스에 액세스 할 수 있습니다.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

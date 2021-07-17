@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BDW_Text_DE -->
+<!-- Author: Shane -->
+<!-- DateCreated: 4/19/2020 5:08:39 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_BDW_IMPORTED" language="de_DE">
+			<Text>Aus einer anderen Quelle importiert.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_MY_INVENTORY" language="de_DE">
+			<Text>MEIN LAGER:</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_THEIR_INVENTORY" language="de_DE">
+			<Text>IHR LAGER:</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_REMAINING" language="de_DE">
+			<Text>VERBLEIBEND</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_ENDED" language="de_DE">
+			<Text>ENDE</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SESSIONWARNING" language="de_DE">
+			<Text>Dieses Abkommen stammt aus der letzten Spielsitzung. Es werden nur Ressourcen, Gold und Luxusgüter mit mehreren Runden Laufzeit angezeigt.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HISTORY_PLACEHOLDER" language="de_DE">
+			<Text>Eure früheren Abkommen mit dieser Zivilisation werden hier gezeigt. Es werden nur Ressourcen, Gold und Luxusgüter aus dieser Spielsitzung angezeigt.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PREVIOUS_DEAL" language="de_DE">
+			<Text>Vorheriges Abkommen</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_TURNS_AGO" language="de_DE">
+			<Text>Runden zurückliegend</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HIDE" language="de_DE">
+			<Text>Verlauf ausblenden</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SHOW" language="de_DE">
+			<Text>Verlauf einblenden</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PLAYER_HAS_RESOURCE" language="de_DE">
+			<Text>Ihr habt bereits Zugriff auf diese Ressource.</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_OTHER_HAS_RESOURCE" language="de_DE">
+			<Text>hat bereits Zugriff auf diese Ressource.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>
