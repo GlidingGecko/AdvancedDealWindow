@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BDW_Text_ZH_HK -->
+<!-- Author: Shane Translater: rainfoxest -->
+<!-- DateCreated: 9/10/2021 5:16:20 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_BDW_IMPORTED" language="zh_Hant_HK">
+			<Text>從其他地方來輸入。</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_MY_INVENTORY" language="zh_Hant_HK">
+			<Text>我的庫存：</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_THEIR_INVENTORY" language="zh_Hant_HK">
+			<Text>他們的庫存：</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_REMAINING" language="zh_Hant_HK">
+			<Text>剩餘</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_ENDED" language="zh_Hant_HK">
+			<Text>已結束</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SESSIONWARNING" language="zh_Hant_HK">
+			<Text>這個交易是來自您上一次的遊戲過程的。僅顯示多回合交易物品。</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HISTORY_PLACEHOLDER" language="zh_Hant_HK">
+			<Text>您之前與該文明的交易將顯示在此處。只會顯示此遊戲過程的交易。</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PREVIOUS_DEAL" language="zh_Hant_HK">
+			<Text>先前交易</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_TURNS_AGO" language="zh_Hant_HK">
+			<Text>回合前</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_HIDE" language="zh_Hant_HK">
+			<Text>隱藏歷史</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_SHOW" language="zh_Hant_HK">
+			<Text>顯示歷史</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_PLAYER_HAS_RESOURCE" language="zh_Hant_HK">
+			<Text>您已經擁有此資源。</Text>
+		</Replace>
+		<Replace Tag="LOC_BDW_OTHER_HAS_RESOURCE" language="zh_Hant_HK">
+			<Text>已經擁有此資源。</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>
